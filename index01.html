@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>雲林縣土庫國小 115學年度小一新生迎新活動 | 親師共譜快樂學習樂章</title>
+  <meta name="description" content="雲林縣土庫國小115學年度小一新生迎新活動專屬入口網。學校願景：創思、健美、感恩、快樂；課程願景：點土成菁，樂動國際我最酷！提供智慧校園APP下載、作息指南與全人課程介紹。">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Canvas Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <!-- 暖色系專屬 Tailwind Config -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            warm: {
+              50: '#fffbf5',
+              100: '#fef3e2',
+              200: '#fde3be',
+              300: '#fccc91',
+              400: '#faab5e',
+              500: '#f58732',
+              600: '#e5671d',
+              700: '#be4e17',
+              800: '#973f1a',
+              900: '#7a3619',
+            },
+            sun: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            },
+            coral: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              300: '#fda4af',
+              400: '#fb7185',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+            }
+          },
+          fontFamily: {
+            sans: ['"Noto Sans TC"', 'sans-serif'],
+            title: ['"Zen Maru Gothic"', '"Noto Sans TC"', 'sans-serif'],
+          },
+          boxShadow: {
+            'warm-xl': '0 20px 40px -15px rgba(229, 103, 29, 0.12)',
+            'warm-glow': '0 10px 25px -5px rgba(245, 158, 11, 0.3)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .font-title { font-family: 'Zen Maru Gothic', 'Noto Sans TC', sans-serif; }
+    .animate-spin-slow { animation: spin 20s linear infinite; }
+    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body class="bg-warm-50 text-slate-800 antialiased font-sans transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100 selection:bg-warm-500 selection:text-white" id="page-body">
+
+  <!-- Top Announcement Bar (課程願景置頂) -->
+  <aside aria-label="課程願景公告" class="bg-gradient-to-r from-amber-600 via-warm-600 to-rose-600 text-white text-xs md:text-sm py-2 px-4 shadow-sm relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="bg-white text-warm-800 font-black px-2.5 py-0.5 rounded-full text-xs animate-pulse shadow-sm">課程願景</span>
+        <span class="font-bold tracking-wide">🌟 點土成菁，樂動國際我最酷！</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-medium">
+        <a href="tel:056622524" class="hover:underline flex items-center gap-1 opacity-95">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5"></i> 學校總機：(05) 6622524
+        </a>
+        <span class="hidden sm:inline opacity-60">|</span>
+        <a href="mailto:chenmg1009@gmail.com" class="hover:underline flex items-center gap-1 opacity-95">
+          <i data-lucide="mail" class="w-3.5 h-3.5"></i> 校長信箱
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Warm Navbar -->
+  <header class="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-warm-200/70 dark:border-slate-800 transition-all shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- School Logo & Title -->
+        <a href="#" class="flex items-center gap-3 group">
+          <!-- 土庫國小校徽 (替換原本的學士帽) -->
+          <div class="h-12 w-auto flex items-center justify-center group-hover:scale-105 transition-transform">
+            <img src="logo.png" alt="土庫國小校徽" class="h-12 w-auto object-contain drop-shadow-sm">
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-title font-black text-xl md:text-2xl tracking-tight text-slate-800 dark:text-white group-hover:text-warm-600 transition-colors">土庫國小</span>
+              <span class="text-xs px-2 py-0.5 rounded-full bg-warm-100 dark:bg-warm-900/60 text-warm-800 dark:text-warm-300 font-bold border border-warm-200 dark:border-warm-800">115學年度</span>
+            </div>
+            <p class="text-xs text-warm-700/80 dark:text-slate-400 font-medium">新生始業式・親師共譜快樂學習樂章</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-1">
+          <a href="#smart-campus" class="px-3 py-2 rounded-xl text-sm font-black text-warm-700 dark:text-warm-400 bg-warm-100/70 dark:bg-warm-950/60 hover:bg-warm-200 transition flex items-center gap-1 border border-warm-300 dark:border-warm-800">
+            <i data-lucide="smartphone" class="w-4 h-4 text-warm-600"></i>
+            <span>智慧校園APP</span>
+          </a>
+          <a href="#principal" class="px-3 py-2 rounded-xl text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-warm-600 hover:bg-warm-50 dark:hover:bg-slate-800 transition">校長理念</a>
+          <a href="#student-profile" class="px-3 py-2 rounded-xl text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-warm-600 hover:bg-warm-50 dark:hover:bg-slate-800 transition">學生圖像</a>
+          <a href="#curriculum" class="px-3 py-2 rounded-xl text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-warm-600 hover:bg-warm-50 dark:hover:bg-slate-800 transition">課程架構</a>
+          <a href="#daily-guide" class="px-3 py-2 rounded-xl text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-warm-600 hover:bg-warm-50 dark:hover:bg-slate-800 transition">作息指南</a>
+          <a href="#notices" class="px-3 py-2 rounded-xl text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-warm-600 hover:bg-warm-50 dark:hover:bg-slate-800 transition">行政叮嚀</a>
+          <a href="#checklist" class="px-3 py-2 rounded-xl text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-warm-600 hover:bg-warm-50 dark:hover:bg-slate-800 transition">入學檢核</a>
+          <a href="#faq" class="px-3 py-2 rounded-xl text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-warm-600 hover:bg-warm-50 dark:hover:bg-slate-800 transition">常見問答</a>
+          <a href="qrcode.html" class="px-3 py-2 rounded-xl text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition flex items-center gap-1 shadow-sm">
+            <i data-lucide="qr-code" class="w-4 h-4"></i>
+            <span>手機 QR 碼</span>
+          </a>
+        </nav>
+
+        <!-- Right Controls & Logo -->
+        <div class="flex items-center gap-2.5">
+          <!-- Dark Mode Toggle -->
+          <button id="theme-toggle" aria-label="切換深色模式" class="p-2 rounded-xl border border-warm-200 dark:border-slate-700 text-warm-700 dark:text-slate-300 hover:bg-warm-100 dark:hover:bg-slate-800 transition">
+            <i data-lucide="moon" class="w-5 h-5 hidden dark:block"></i>
+            <i data-lucide="sun" class="w-5 h-5 block dark:hidden text-amber-500"></i>
+          </button>
+          <!-- Print -->
+          <button onclick="window.print()" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-warm-100 dark:bg-slate-800 hover:bg-warm-200 text-warm-900 dark:text-slate-200 text-sm font-bold transition border border-warm-200 dark:border-slate-700">
+            <i data-lucide="printer" class="w-4 h-4"></i>
+            <span>列印</span>
+          </button>
+          <!-- Mobile Menu -->
+          <button id="mobile-menu-btn" aria-label="開啟選單" class="lg:hidden p-2.5 rounded-xl bg-warm-100 dark:bg-slate-800 text-warm-800 dark:text-warm-300 hover:bg-warm-200 transition">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+          
+          <!-- 土庫國小校徽 (最右上方) -->
+          <div class="hidden sm:flex items-center pl-2 border-l border-warm-200 dark:border-slate-700">
+            <img src="logo.png" alt="土庫國小校徽" class="h-12 w-auto object-contain drop-shadow-sm hover:scale-105 transition-transform" title="雲林縣土庫國小校徽">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-slate-900 border-b border-warm-200 dark:border-slate-800 px-4 pt-2 pb-6 space-y-2 shadow-xl">
+      <a href="#smart-campus" class="block px-4 py-2.5 rounded-xl font-black bg-warm-100 text-warm-900 flex items-center gap-2">
+        <i data-lucide="smartphone" class="w-5 h-5 text-warm-600"></i> 智慧校園 APP 下載與說明
+      </a>
+      <a href="#principal" class="block px-4 py-2 rounded-xl font-bold text-slate-700 dark:text-slate-200 hover:bg-warm-50">校長理念</a>
+      <a href="#student-profile" class="block px-4 py-2 rounded-xl font-bold text-slate-700 dark:text-slate-200 hover:bg-warm-50">學生圖像</a>
+      <a href="#curriculum" class="block px-4 py-2 rounded-xl font-bold text-slate-700 dark:text-slate-200 hover:bg-warm-50">課程架構</a>
+      <a href="#daily-guide" class="block px-4 py-2 rounded-xl font-bold text-slate-700 dark:text-slate-200 hover:bg-warm-50">作息指南</a>
+      <a href="#notices" class="block px-4 py-2 rounded-xl font-bold text-slate-700 dark:text-slate-200 hover:bg-warm-50">行政叮嚀</a>
+      <a href="#checklist" class="block px-4 py-2 rounded-xl font-bold text-slate-700 dark:text-slate-200 hover:bg-warm-50">入學檢核</a>
+      <a href="#faq" class="block px-4 py-2 rounded-xl font-bold text-slate-700 dark:text-slate-200 hover:bg-warm-50">常見問答</a>
+      <a href="qrcode.html" class="block px-4 py-2.5 rounded-xl font-bold bg-amber-500 text-white flex items-center justify-between">
+        <span class="flex items-center gap-2"><i data-lucide="qr-code" class="w-5 h-5"></i> 手機 QR 碼專頁</span>
+        <span class="text-xs bg-white text-amber-900 px-2 py-0.5 rounded font-black">掃描</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden pt-10 pb-16 lg:pt-14 lg:pb-24 bg-gradient-to-b from-warm-100/90 via-sun-50/50 to-warm-50 dark:from-slate-900 dark:via-slate-900/80 dark:to-slate-950 border-b border-warm-200/80 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      
+      <!-- Date Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 dark:bg-slate-800/90 shadow-sm border border-warm-300 dark:border-slate-700 mb-6">
+        <span class="w-2.5 h-2.5 rounded-full bg-warm-500 animate-ping"></span>
+        <span class="text-xs sm:text-sm font-bold text-warm-900 dark:text-warm-300">📅 小一新生迎新活動盛會：2026 年 8 月 29 日</span>
+        <span class="text-warm-300">|</span>
+        <span class="text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300">雲林縣土庫國民小學</span>
+      </div>
+
+      <!-- Main Heading -->
+      <h1 class="font-title font-black text-4xl sm:text-5xl lg:text-6xl tracking-tight text-slate-900 dark:text-white mb-4 leading-tight">
+        土庫國小 <span class="text-transparent bg-clip-text bg-gradient-to-r from-warm-600 via-sun-500 to-rose-600">115學年度</span> 小一新生迎新活動
+      </h1>
+
+      <p class="text-xl sm:text-2xl font-bold text-warm-800 dark:text-warm-300 mb-8 font-title">
+        🎵 ～ 親師共譜快樂學習樂章 ～ 🎶
+      </p>
+
+      <!-- 學校願景四大徽章 (創思、健美、感恩、快樂) -->
+      <div class="mb-3">
+        <span class="text-xs font-black uppercase tracking-widest text-warm-700/80 dark:text-warm-400">土庫國小四大願景</span>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-10">
+        <div class="flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-amber-500/15 border border-amber-500/40 text-amber-900 dark:text-amber-300 font-bold text-base shadow-sm hover:scale-105 transition-transform">
+          <span class="w-3.5 h-3.5 rounded-full bg-amber-500"></span> 💡 創思 (啟發潛能)
+        </div>
+        <div class="flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-warm-500/15 border border-warm-500/40 text-warm-900 dark:text-warm-300 font-bold text-base shadow-sm hover:scale-105 transition-transform">
+          <span class="w-3.5 h-3.5 rounded-full bg-warm-500"></span> 🏃‍♂️ 健美 (強健體魄)
+        </div>
+        <div class="flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-rose-500/15 border border-rose-500/40 text-rose-900 dark:text-rose-300 font-bold text-base shadow-sm hover:scale-105 transition-transform">
+          <span class="w-3.5 h-3.5 rounded-full bg-rose-500"></span> 🙏 感恩 (懂得回饋)
+        </div>
+        <div class="flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-orange-500/15 border border-orange-500/40 text-orange-900 dark:text-orange-300 font-bold text-base shadow-sm hover:scale-105 transition-transform">
+          <span class="w-3.5 h-3.5 rounded-full bg-orange-500"></span> 😊 快樂 (熱愛學習)
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="#smart-campus" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-warm-600 to-amber-500 hover:from-warm-700 hover:to-amber-600 text-white font-black shadow-warm-glow hover:scale-105 transition">
+          <i data-lucide="smartphone" class="w-5 h-5"></i>
+          <span>智慧校園 APP 專區</span>
+        </a>
+        <a href="qrcode.html" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-white dark:bg-slate-800 border-2 border-warm-300 text-warm-800 dark:text-warm-300 font-bold hover:bg-warm-50 transition shadow-sm hover:scale-105">
+          <i data-lucide="qr-code" class="w-5 h-5 text-warm-600"></i>
+          <span>手機 QR 碼</span>
+        </a>
+        <button id="celebrate-btn" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-sun-400 hover:bg-sun-500 text-amber-950 font-bold shadow-md hover:scale-105 transition">
+          <i data-lucide="party-popper" class="w-5 h-5"></i>
+          <span>入學彩帶</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Highlights Ribbon (關鍵數據) -->
+  <section class="py-6 bg-white dark:bg-slate-900 border-b border-warm-200/80 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-warm-50 dark:bg-slate-800 border border-warm-100 dark:border-slate-700">
+          <div class="w-12 h-12 rounded-xl bg-warm-100 dark:bg-warm-900/60 text-warm-600 dark:text-warm-300 flex items-center justify-center font-bold">
+            <i data-lucide="landmark" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="text-2xl font-black text-warm-900 dark:text-white font-title">127 年</div>
+            <div class="text-xs text-slate-500 font-semibold">百年樹人・歷史悠久</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-warm-50 dark:bg-slate-800 border border-warm-100 dark:border-slate-700">
+          <div class="w-12 h-12 rounded-xl bg-sun-100 dark:bg-sun-900/60 text-sun-600 dark:text-sun-300 flex items-center justify-center font-bold">
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="text-2xl font-black text-warm-900 dark:text-white font-title">681 人</div>
+            <div class="text-xs text-slate-500 font-semibold">全校學童 (29班)</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-warm-50 dark:bg-slate-800 border border-warm-100 dark:border-slate-700">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/60 text-amber-600 flex items-center justify-center font-bold">
+            <i data-lucide="award" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="text-2xl font-black text-warm-900 dark:text-white font-title">33 年</div>
+            <div class="text-xs text-slate-500 font-semibold">校長深耕教育經歷</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-warm-50 dark:bg-slate-800 border border-warm-100 dark:border-slate-700">
+          <div class="w-12 h-12 rounded-xl bg-rose-100 dark:bg-rose-900/60 text-rose-600 flex items-center justify-center font-bold">
+            <i data-lucide="utensils" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="text-2xl font-black text-warm-900 dark:text-white font-title">69.1 元</div>
+            <div class="text-xs text-slate-500 font-semibold">中央+縣府高品質午餐</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================== -->
+  <!-- ⭐️ 重點新增：智慧校園親師生平台 APP 專區 (Smart Campus APP) ⭐️ -->
+  <!-- ======================================================== -->
+  <section id="smart-campus" class="py-16 sm:py-20 bg-gradient-to-br from-amber-500/10 via-warm-100 to-sun-100/60 dark:from-slate-900 dark:via-warm-950/30 dark:to-slate-900 border-b border-warm-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-warm-500 text-white font-black text-xs uppercase tracking-wider mb-3 shadow-sm">
+          <i data-lucide="smartphone" class="w-4 h-4"></i> 雲林縣智慧校園必備工具
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black font-title text-slate-900 dark:text-white mb-3">
+          智慧校園親師生平台 3.0 APP 下載與操作說明
+        </h2>
+        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+          雲林縣政府推動「數位學生證」作為親師電子溝通平台，具備<strong>到校管理、成績查詢、圖書借閱、電子聯絡簿、即時訊息通知</strong>等強大功能！
+        </p>
+      </div>
+
+      <!-- Main Feature Container: 4 Fast Action Blocks with QR Code -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        
+        <!-- Link 1: iOS Download -->
+        <div class="bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-warm-xl border-2 border-warm-300 dark:border-slate-700 flex flex-col justify-between hover:-translate-y-1 transition group">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-black px-2.5 py-1 rounded-lg bg-sky-100 text-sky-800">Apple iOS</span>
+              <i data-lucide="apple" class="w-6 h-6 text-slate-800 dark:text-white"></i>
+            </div>
+            <h3 class="text-lg font-black font-title text-slate-900 dark:text-white mb-2">1. iOS 版本下載</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mb-4">
+              iPhone 家長請點擊或掃描 QR 碼至 App Store 下載安裝。
+            </p>
+            <!-- QR Code -->
+            <div class="p-3 bg-slate-50 dark:bg-slate-700/50 rounded-2xl text-center border border-slate-100 dark:border-slate-600 mb-4">
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https://apps.apple.com/tw/app/%E9%9B%B2%E6%9E%97%E7%B8%A3%E6%99%BA%E6%85%A7%E6%A0%A1%E5%9C%92%E8%A6%AA%E5%B8%AB%E7%94%9F%E5%B9%B3%E5%8F%B03-0/id1554051196" 
+                   alt="iOS 下載 QR Code" class="w-28 h-28 mx-auto rounded-lg shadow-sm">
+              <span class="text-[10px] font-bold text-slate-400 mt-1 block">手機相機掃描</span>
+            </div>
+          </div>
+          <a href="https://apps.apple.com/tw/app/%E9%9B%B2%E6%9E%97%E7%B8%A3%E6%99%BA%E6%85%A7%E6%A0%A1%E5%9C%92%E8%A6%AA%E5%B8%AB%E7%94%9F%E5%B9%B3%E5%8F%B03-0/id1554051196" 
+             target="_blank" rel="noopener noreferrer" 
+             class="w-full py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-black text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow transition">
+            <i data-lucide="download" class="w-4 h-4"></i>
+            <span>前往 App Store 下載</span>
+          </a>
+        </div>
+
+        <!-- Link 2: Android Download -->
+        <div class="bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-warm-xl border-2 border-emerald-300 dark:border-slate-700 flex flex-col justify-between hover:-translate-y-1 transition group">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-black px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-800">Android 安卓</span>
+              <i data-lucide="play" class="w-6 h-6 text-emerald-600"></i>
+            </div>
+            <h3 class="text-lg font-black font-title text-slate-900 dark:text-white mb-2">2. 安卓版本下載</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mb-4">
+              Android 手機請點擊或掃描至 Google Play 商店下載。
+            </p>
+            <!-- QR Code -->
+            <div class="p-3 bg-slate-50 dark:bg-slate-700/50 rounded-2xl text-center border border-slate-100 dark:border-slate-600 mb-4">
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https://play.google.com/store/apps/details?id=tw.com.schoolsoft.app.scss12.yunlinschapp" 
+                   alt="安卓下載 QR Code" class="w-28 h-28 mx-auto rounded-lg shadow-sm">
+              <span class="text-[10px] font-bold text-slate-400 mt-1 block">手機相機掃描</span>
+            </div>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=tw.com.schoolsoft.app.scss12.yunlinschapp" 
+             target="_blank" rel="noopener noreferrer" 
+             class="w-full py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow transition">
+            <i data-lucide="download" class="w-4 h-4"></i>
+            <span>前往 Google Play 下載</span>
+          </a>
+        </div>
+
+        <!-- Link 3: 首次下載說明 -->
+        <div class="bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-warm-xl border-2 border-amber-300 dark:border-slate-700 flex flex-col justify-between hover:-translate-y-1 transition group">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-black px-2.5 py-1 rounded-lg bg-amber-100 text-amber-900">首次註冊綁定</span>
+              <i data-lucide="book-open-check" class="w-6 h-6 text-amber-600"></i>
+            </div>
+            <h3 class="text-lg font-black font-title text-slate-900 dark:text-white mb-2">3. 首次下載使用說明</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mb-4">
+              新手家長首次註冊、身份認證與綁定步驟詳細圖文指引。
+            </p>
+            <!-- QR Code -->
+            <div class="p-3 bg-slate-50 dark:bg-slate-700/50 rounded-2xl text-center border border-slate-100 dark:border-slate-600 mb-4">
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https://drive.google.com/file/d/1lvLBMMIpDU5uOY9BG0N_SMfkjNdNO-ya/view?usp=sharing" 
+                   alt="首次下載說明 QR Code" class="w-28 h-28 mx-auto rounded-lg shadow-sm">
+              <span class="text-[10px] font-bold text-slate-400 mt-1 block">手機掃描閱讀 PDF</span>
+            </div>
+          </div>
+          <a href="https://drive.google.com/file/d/1lvLBMMIpDU5uOY9BG0N_SMfkjNdNO-ya/view?usp=sharing" 
+             target="_blank" rel="noopener noreferrer" 
+             class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-warm-500 hover:from-amber-600 hover:to-warm-600 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow transition">
+            <i data-lucide="file-text" class="w-4 h-4"></i>
+            <span>查看首次下載指南</span>
+          </a>
+        </div>
+
+        <!-- Link 4: 已安裝過，新增子女說明 -->
+        <div class="bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-warm-xl border-2 border-rose-300 dark:border-slate-700 flex flex-col justify-between hover:-translate-y-1 transition group">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-black px-2.5 py-1 rounded-lg bg-rose-100 text-rose-900">二寶/多子女家庭</span>
+              <i data-lucide="user-plus" class="w-6 h-6 text-rose-600"></i>
+            </div>
+            <h3 class="text-lg font-black font-title text-slate-900 dark:text-white mb-2">4. 新增子女操作說明</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mb-4">
+              已有帳號家長，快速新增小一新生子女之綁定教學。
+            </p>
+            <!-- QR Code -->
+            <div class="p-3 bg-slate-50 dark:bg-slate-700/50 rounded-2xl text-center border border-slate-100 dark:border-slate-600 mb-4">
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https://drive.google.com/file/d/1f8m2dGev9MBL6SfXuXtX_VvXfmVFZbO2/view?usp=sharing" 
+                   alt="新增子女說明 QR Code" class="w-28 h-28 mx-auto rounded-lg shadow-sm">
+              <span class="text-[10px] font-bold text-slate-400 mt-1 block">手機掃描閱讀 PDF</span>
+            </div>
+          </div>
+          <a href="https://drive.google.com/file/d/1f8m2dGev9MBL6SfXuXtX_VvXfmVFZbO2/view?usp=sharing" 
+             target="_blank" rel="noopener noreferrer" 
+             class="w-full py-2.5 px-4 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow transition">
+            <i data-lucide="file-text" class="w-4 h-4"></i>
+            <span>查看新增子女指南</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Information Help Card (資訊組諮詢專線) -->
+      <div class="bg-white/90 dark:bg-slate-800/90 rounded-3xl p-6 sm:p-8 shadow-md border border-warm-300 dark:border-slate-700 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-4">
+          <div class="w-14 h-14 rounded-2xl bg-warm-100 text-warm-700 flex items-center justify-center shrink-0">
+            <i data-lucide="help-circle" class="w-7 h-7"></i>
+          </div>
+          <div>
+            <h4 class="text-base font-black text-slate-900 dark:text-white">下載或綁定 APP 有任何疑問？</h4>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-0.5">
+              若在 APP 下載、登入或新增子女過程中遇到問題，歡迎隨時聯繫學校資訊組，我們將竭誠為您服務！
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3 shrink-0">
+          <div class="px-4 py-2 bg-warm-50 dark:bg-slate-700 rounded-xl border border-warm-200 dark:border-slate-600 text-center">
+            <span class="text-[11px] font-bold text-slate-400 block">資訊組長</span>
+            <span class="text-sm font-black text-warm-900 dark:text-white">謝俊慶 老師</span>
+          </div>
+          <a href="tel:0915616260" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-warm-500 hover:bg-warm-600 text-white font-bold text-xs transition shadow-sm">
+            <i data-lucide="phone" class="w-4 h-4"></i> 0915-616260
+          </a>
+          <a href="tel:056622524,2743" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 text-slate-700 dark:text-slate-200 font-bold text-xs transition border border-slate-200 dark:border-slate-600">
+            <i data-lucide="phone-forwarded" class="w-4 h-4"></i> (05) 6622524 分機 2743
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 1: 校長理念 (Principal) -->
+  <section id="principal" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-warm-100 dark:bg-warm-900/50 text-warm-800 dark:text-warm-300 font-bold text-xs uppercase mb-3">
+        <i data-lucide="user-check" class="w-4 h-4"></i> 領航舵手
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-black font-title text-slate-900 dark:text-white mb-3">
+        校長專區：個人簡歷與教育理念
+      </h2>
+      <p class="text-slate-600 dark:text-slate-300">
+        以 33 年的教育熱忱，攜手親師生共創契機，落實「為孩子開創舞台，展現自信與優勢」。
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <!-- Profile Card -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="bg-gradient-to-br from-warm-600 via-amber-600 to-rose-600 rounded-3xl p-8 text-white shadow-xl">
+          <div class="flex items-center gap-2 text-amber-200 text-xs font-bold uppercase mb-2">
+            <i data-lucide="sparkles" class="w-4 h-4"></i> 核心辦學理念
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-black font-title mb-4">
+            「為孩子開創舞台，展現自信與優勢」
+          </h3>
+          <p class="text-amber-100 text-sm leading-relaxed mb-6">
+            每個孩子都是獨一無二的種子。在土庫國小，我們落實全人教育，以四大願景與四大核心素養圖像，讓孩子在愛與鼓勵中茁壯！
+          </p>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-white/20 text-center">
+            <div class="p-2 bg-white/10 rounded-xl font-bold">💡 創思</div>
+            <div class="p-2 bg-white/10 rounded-xl font-bold">🏃 健美</div>
+            <div class="p-2 bg-white/10 rounded-xl font-bold">🙏 感恩</div>
+            <div class="p-2 bg-white/10 rounded-xl font-bold">😊 快樂</div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-warm-xl border border-warm-200/80 dark:border-slate-700">
+          <h4 class="text-lg font-bold mb-4 text-slate-800 dark:text-white flex items-center gap-2">
+            <i data-lucide="briefcase" class="w-5 h-5 text-warm-600"></i>
+            <span>陳明誌校長・33 年教育歷程</span>
+          </h4>
+          <ul class="border-l-2 border-warm-300 dark:border-slate-700 ml-3 space-y-4 text-sm">
+            <li class="relative pl-5">
+              <span class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-warm-600"></span>
+              <strong class="text-slate-800 dark:text-white">土庫國小 校長</strong> (113.8.1 起 ～ 現任)
+            </li>
+            <li class="relative pl-5">
+              <span class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-slate-400"></span>
+              <span class="text-slate-700 dark:text-slate-300">北辰國小 校長 (服務 8 年)</span>
+            </li>
+            <li class="relative pl-5">
+              <span class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-slate-400"></span>
+              <span class="text-slate-700 dark:text-slate-300">尚德國小 校長 (兼代北辰國小)</span>
+            </li>
+            <li class="relative pl-5">
+              <span class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-slate-400"></span>
+              <span class="text-slate-700 dark:text-slate-300">頂湖國小 主任</span>
+            </li>
+            <li class="relative pl-5">
+              <span class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-slate-400"></span>
+              <span class="text-slate-700 dark:text-slate-300">燦林國小 實習教師、教師、主任 (服務 15 年)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 四輪驅動 -->
+      <div class="lg:col-span-5 bg-white dark:bg-slate-800 rounded-3xl p-6 sm:p-8 shadow-warm-xl border border-warm-200/80 dark:border-slate-700 text-center">
+        <span class="px-3 py-1 bg-warm-100 dark:bg-warm-900/40 text-warm-800 dark:text-warm-300 font-bold text-xs rounded-full">四輪驅動・共創契機</span>
+        <h4 class="text-2xl font-black font-title mt-2 mb-4 text-slate-900 dark:text-white">親師生四維支柱</h4>
+        <div class="relative max-w-[280px] mx-auto aspect-square flex items-center justify-center my-6">
+          <div class="absolute inset-2 rounded-full border-4 border-dashed border-warm-300 dark:border-slate-700 animate-spin-slow"></div>
+          <div class="relative z-10 w-28 h-28 rounded-full bg-gradient-to-tr from-warm-500 to-amber-400 text-white flex flex-col items-center justify-center shadow-lg">
+            <i data-lucide="sparkle" class="w-5 h-5 text-yellow-200 mb-0.5"></i>
+            <span class="font-black font-title text-sm">優質學生</span>
+            <span class="text-[10px] text-amber-100">核心目標</span>
+          </div>
+          <div class="absolute -top-1 font-bold text-xs bg-rose-600 text-white px-2.5 py-1 rounded-xl shadow">行政服務</div>
+          <div class="absolute top-1/2 -right-3 -translate-y-1/2 font-bold text-xs bg-amber-600 text-white px-2.5 py-1 rounded-xl shadow">教師教學</div>
+          <div class="absolute -bottom-1 font-bold text-xs bg-warm-600 text-white px-2.5 py-1 rounded-xl shadow">家長支持</div>
+          <div class="absolute top-1/2 -left-3 -translate-y-1/2 font-bold text-xs bg-sun-500 text-white px-2.5 py-1 rounded-xl shadow">學生努力</div>
+        </div>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-4">
+          行政全力支援、教師熱忱教學、家長信任同行、學生自主努力，四方合力共譜美好樂章。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: 學生圖像與特色實踐 (4 Student Profiles) -->
+  <section id="student-profile" class="py-16 sm:py-24 bg-white dark:bg-slate-900 border-y border-warm-200/80 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-warm-100 border border-warm-300 text-warm-800 font-black text-sm uppercase mb-3">
+          <span>🌟 土匯能量・庫聚熱情 🌟</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-title text-slate-900 dark:text-white mb-4">
+          核心素養發展 —— 四大「學生圖像」
+        </h2>
+        <p class="text-slate-600 dark:text-slate-300 text-base sm:text-lg">
+          將多元校園特色融入素養導向，培育具備品德、自學、行動與溝通力的全人優質好兒童！
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- 1. 品德力 -->
+        <div class="bg-warm-50/60 dark:bg-slate-800 rounded-3xl p-7 shadow-warm-xl border-t-4 border-t-rose-500 border border-warm-200 dark:border-slate-700 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-black bg-rose-100 text-rose-800">
+                素養圖像 01・品格人生
+              </span>
+              <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center">
+                <i data-lucide="heart-handshake" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h3 class="text-2xl font-black text-slate-900 dark:text-white font-title mb-2">品德力</h3>
+            
+            <div class="p-3.5 rounded-2xl bg-rose-100/60 dark:bg-rose-950/20 text-xs text-rose-950 dark:text-rose-200 mb-4 border border-rose-200 leading-relaxed font-semibold">
+              🎯 <strong>素養指標</strong>：能明辨是非善惡、願意改善生活態度達到共好、能主動關懷並協助他人。
+            </div>
+
+            <div class="space-y-2.5 text-sm text-slate-700 dark:text-slate-300">
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
+                <span><strong>校訂品德實踐家</strong>：1 至 6 年級系統化三好生活實踐主題課程。</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
+                <span><strong>三好薑餅屋活動</strong>：做好事、說好話、存好心情境實作。</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
+                <span><strong>品德角落楷模</strong>：廊道與班級環境佈置品德榜樣，耳濡目染。</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
+                <span><strong>社區關懷實踐</strong>：歲末走入社區送暖，體會感恩與奉獻。</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-rose-100 flex flex-wrap gap-1.5">
+            <span class="text-xs bg-white text-rose-700 px-2 py-0.5 rounded border border-rose-200">#三好生活</span>
+            <span class="text-xs bg-white text-rose-700 px-2 py-0.5 rounded border border-rose-200">#品德實踐家</span>
+            <span class="text-xs bg-white text-rose-700 px-2 py-0.5 rounded border border-rose-200">#社區送暖</span>
+          </div>
+        </div>
+
+        <!-- 2. 自學力 -->
+        <div class="bg-warm-50/60 dark:bg-slate-800 rounded-3xl p-7 shadow-warm-xl border-t-4 border-t-amber-500 border border-warm-200 dark:border-slate-700 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-black bg-amber-100 text-amber-900">
+                素養圖像 02・閱讀與科技
+              </span>
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center">
+                <i data-lucide="book-open" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h3 class="text-2xl font-black text-slate-900 dark:text-white font-title mb-2">自學力</h3>
+            
+            <div class="p-3.5 rounded-2xl bg-amber-100/60 dark:bg-amber-950/20 text-xs text-amber-950 dark:text-amber-200 mb-4 border border-amber-200 leading-relaxed font-semibold">
+              🎯 <strong>素養指標</strong>：理解自學重要性、運用多元方式達成自學、對生活事物充滿好奇心與主動求知態度。
+            </div>
+
+            <div class="space-y-2.5 text-sm text-slate-700 dark:text-slate-300">
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-600 shrink-0 mt-0.5"></i>
+                <span><strong>閱讀績優學校</strong>：推動親子共讀、愛閱獎勵、名作家有約深度分享。</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-600 shrink-0 mt-0.5"></i>
+                <span><strong>閱讀與科技校訂課程</strong>：5-6 年級「閱讀探索家」與 3-6 年級「科技創作家」。</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-600 shrink-0 mt-0.5"></i>
+                <span><strong>海量雲端電子書</strong>：結合鎮立圖書館與新北數位資源，培養自主探究習慣。</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-600 shrink-0 mt-0.5"></i>
+                <span><strong>智慧校園系統</strong>：點數獎勵數位化、學習歷程雲端建檔自主追蹤。</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-amber-100 flex flex-wrap gap-1.5">
+            <span class="text-xs bg-white text-amber-800 px-2 py-0.5 rounded border border-amber-200">#閱讀績優</span>
+            <span class="text-xs bg-white text-amber-800 px-2 py-0.5 rounded border border-amber-200">#親子共讀</span>
+            <span class="text-xs bg-white text-amber-800 px-2 py-0.5 rounded border border-amber-200">#數位自主學</span>
+          </div>
+        </div>
+
+        <!-- 3. 行動力 -->
+        <div class="bg-warm-50/60 dark:bg-slate-800 rounded-3xl p-7 shadow-warm-xl border-t-4 border-t-warm-500 border border-warm-200 dark:border-slate-700 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-black bg-warm-100 text-warm-900">
+                素養圖像 03・多元展能與體能
+              </span>
+              <div class="w-10 h-10 rounded-xl bg-warm-100 text-warm-700 flex items-center justify-center">
+                <i data-lucide="trophy" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h3 class="text-2xl font-black text-slate-900 dark:text-white font-title mb-2">行動力</h3>
+            
+            <div class="p-3.5 rounded-2xl bg-warm-100/60 dark:bg-warm-950/20 text-xs text-warm-950 dark:text-warm-200 mb-4 border border-warm-200 leading-relaxed font-semibold">
+              🎯 <strong>素養指標</strong>：察覺生活問題、運用所學實際解決問題、身體力行完成自訂目標。
+            </div>
+
+            <div class="space-y-2.5 text-sm text-slate-700 dark:text-slate-300">
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-warm-600 shrink-0 mt-0.5"></i>
+                <span><strong>傳統舞龍 7 連冠</strong>：傳統技藝傲視全台，榮獲體育有功績優獎。</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-warm-600 shrink-0 mt-0.5"></i>
+                <span><strong>籃球與多元體育</strong>：113年順天盃冠軍、全國菁英盃亞軍、縣長盃第一名。</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-warm-600 shrink-0 mt-0.5"></i>
+                <span><strong>國樂合奏全國優等</strong>：113學年度全國音樂比賽優等、草地音樂季登台。</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-warm-600 shrink-0 mt-0.5"></i>
+                <span><strong>無人機足球與機器人</strong>：Drone Soccer 團隊競技、AI 機器人與科技創客動手做。</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-warm-100 flex flex-wrap gap-1.5">
+            <span class="text-xs bg-white text-warm-800 px-2 py-0.5 rounded border border-warm-200">#舞龍7連冠</span>
+            <span class="text-xs bg-white text-warm-800 px-2 py-0.5 rounded border border-warm-200">#順天盃冠軍</span>
+            <span class="text-xs bg-white text-warm-800 px-2 py-0.5 rounded border border-warm-200">#國樂全國優等</span>
+          </div>
+        </div>
+
+        <!-- 4. 溝通力 -->
+        <div class="bg-warm-50/60 dark:bg-slate-800 rounded-3xl p-7 shadow-warm-xl border-t-4 border-t-orange-500 border border-warm-200 dark:border-slate-700 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-black bg-orange-100 text-orange-900">
+                素養圖像 04・國際與人際
+              </span>
+              <div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center">
+                <i data-lucide="languages" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h3 class="text-2xl font-black text-slate-900 dark:text-white font-title mb-2">溝通力</h3>
+            
+            <div class="p-3.5 rounded-2xl bg-orange-100/60 dark:bg-orange-950/20 text-xs text-orange-950 dark:text-orange-200 mb-4 border border-orange-200 leading-relaxed font-semibold">
+              🎯 <strong>素養指標</strong>：認知溝通重要性、運用多元溝通技巧表達意見、願意傾聽他人並給予正向回饋。
+            </div>
+
+            <div class="space-y-2.5 text-sm text-slate-700 dark:text-slate-300">
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-500 shrink-0 mt-0.5"></i>
+                <span><strong>外師互動與雙語體育</strong>：外籍師資沉浸情境對話、趣味雙語體育寓教於樂。</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-500 shrink-0 mt-0.5"></i>
+                <span><strong>國際特派員校訂課程</strong>：1 至 6 年級生活化國際教育（低年級不考試、重口說）。</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-500 shrink-0 mt-0.5"></i>
+                <span><strong>英語讀者劇場與節慶</strong>：聖誕闖關體驗、本土語言（閩南語）文化扎根。</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-500 shrink-0 mt-0.5"></i>
+                <span><strong>親師三通溝通機制</strong>：時時溝通、處處溝通、有效溝通，親師攜手同行。</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-orange-100 flex flex-wrap gap-1.5">
+            <span class="text-xs bg-white text-orange-800 px-2 py-0.5 rounded border border-orange-200">#外師雙語</span>
+            <span class="text-xs bg-white text-orange-800 px-2 py-0.5 rounded border border-orange-200">#雙語體育</span>
+            <span class="text-xs bg-white text-orange-800 px-2 py-0.5 rounded border border-orange-200">#親師三通</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: 課程架構 (Curriculum) -->
+  <section id="curriculum" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-warm-100 text-warm-800 font-bold text-xs uppercase mb-3">
+        <i data-lucide="layers" class="w-4 h-4"></i> 扎根與深化
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-black font-title text-slate-900 dark:text-white mb-3">
+        土庫國小課程架構規劃
+      </h2>
+      <p class="text-slate-600 dark:text-slate-300">
+        部定領域精熟奠基，校訂彈性統整探究，落實全人適性發展。
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <!-- 部定課程 -->
+      <div class="lg:col-span-5 bg-white dark:bg-slate-800 rounded-3xl p-6 sm:p-8 shadow-warm-xl border border-warm-200 dark:border-slate-700">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-12 h-12 rounded-2xl bg-warm-500 text-white flex items-center justify-center font-bold">
+            <i data-lucide="book" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <span class="text-xs font-bold text-warm-600">領域核心奠基</span>
+            <h3 class="text-2xl font-black font-title">【部定課程】</h3>
+          </div>
+        </div>
+        <div class="space-y-3 text-sm">
+          <div class="p-3 bg-warm-50 dark:bg-slate-750 rounded-xl font-semibold flex items-center justify-between">
+            <span>● 語文領域 (國語 6 節、本土語 1 節)</span>
+            <span class="text-xs bg-warm-200 text-warm-900 px-2 py-0.5 rounded font-bold">注音精熟</span>
+          </div>
+          <div class="p-3 bg-warm-50 dark:bg-slate-750 rounded-xl font-semibold">● 數學領域 (4 節・具象操作與邏輯)</div>
+          <div class="p-3 bg-warm-50 dark:bg-slate-750 rounded-xl font-semibold">● 生活課程 (6 節・生活探索 + 音樂美育)</div>
+          <div class="p-3 bg-warm-50 dark:bg-slate-750 rounded-xl font-semibold">● 健康與體育領域 (3 節・體能與衛教)</div>
+          <div class="p-3 bg-warm-50 dark:bg-slate-750 rounded-xl font-semibold text-slate-400">● 社會、自然科學、綜合活動、藝術 (中高年級)</div>
+        </div>
+      </div>
+
+      <!-- 校訂課程 -->
+      <div class="lg:col-span-7 bg-white dark:bg-slate-800 rounded-3xl p-6 sm:p-8 shadow-warm-xl border border-warm-200 dark:border-slate-700">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500 text-white flex items-center justify-center font-bold">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <span class="text-xs font-bold text-amber-600">特色探究與多元深化</span>
+            <h3 class="text-2xl font-black font-title">【校訂課程 / 彈性學習課程】</h3>
+          </div>
+        </div>
+
+        <div class="space-y-4 text-xs sm:text-sm">
+          <div class="p-4 bg-amber-50/80 dark:bg-slate-750 rounded-2xl border border-amber-200">
+            <h4 class="font-bold text-amber-900 dark:text-amber-300 mb-2 flex items-center gap-1.5">
+              <i data-lucide="compass" class="w-4 h-4"></i> 統整性主題 / 專題 / 議題探究課程
+            </h4>
+            <div class="grid grid-cols-2 gap-2 text-slate-700 dark:text-slate-300 font-medium">
+              <div>● 1-6 年級：國際特派員</div>
+              <div>● 1-6 年級：品德實踐家</div>
+              <div>● 3-6 年級：科技創作家</div>
+              <div>● 5-6 年級：閱讀探索家</div>
+            </div>
+          </div>
+
+          <div class="p-4 bg-rose-50/80 dark:bg-slate-750 rounded-2xl border border-rose-200">
+            <h4 class="font-bold text-rose-900 dark:text-rose-300 mb-1 flex items-center gap-1.5">
+              <i data-lucide="shield" class="w-4 h-4"></i> 特殊需求領域課程
+            </h4>
+            <p class="text-slate-700 dark:text-slate-300">● 體育班專項訓練 ● 資源班 IEP 個別化教育計畫</p>
+          </div>
+
+          <div class="p-4 bg-warm-50 dark:bg-slate-750 rounded-2xl border border-warm-200">
+            <h4 class="font-bold text-warm-900 dark:text-warm-300 mb-2 flex items-center gap-1.5">
+              <i data-lucide="puzzle" class="w-4 h-4"></i> 年段主題思維與其他議題課程
+            </h4>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-1.5 text-xs text-slate-700 dark:text-slate-300">
+              <div class="p-1.5 bg-white dark:bg-slate-700 rounded font-semibold border border-warm-100">小一：字寶樂園</div>
+              <div class="p-1.5 bg-white dark:bg-slate-700 rounded font-semibold border border-warm-100">小二：語森林/邏輯</div>
+              <div class="p-1.5 bg-white dark:bg-slate-700 rounded font-semibold border border-warm-100">小三：點點腦力村</div>
+              <div class="p-1.5 bg-white dark:bg-slate-700 rounded font-semibold border border-warm-100">小四：推理大玩家</div>
+              <div class="p-1.5 bg-white dark:bg-slate-700 rounded font-semibold border border-warm-100">小五：策略小高手</div>
+              <div class="p-1.5 bg-white dark:bg-slate-700 rounded font-semibold border border-warm-100">小六：解謎挑戰營</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: 新生作息指南 (Daily Guide) -->
+  <section id="daily-guide" class="py-16 sm:py-24 bg-warm-100/50 dark:bg-slate-900 border-y border-warm-200/80 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl sm:text-4xl font-black font-title text-slate-900 dark:text-white mb-3">
+          孩童上學趣・在校美好時光
+        </h2>
+        <p class="text-slate-600 dark:text-slate-300">清楚明瞭的接送規劃與一日作息安排，家長放心、孩子開心。</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 text-center">
+        <div class="bg-white dark:bg-slate-800 rounded-3xl p-5 border border-warm-200 shadow-sm">
+          <div class="w-10 h-10 rounded-2xl bg-amber-500 text-white mx-auto flex items-center justify-center mb-2">
+            <i data-lucide="sunrise" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-sm">1. 上學時間</h3>
+          <div class="text-lg font-black text-warm-700 dark:text-warm-300 font-title my-1">07:00 - 07:30</div>
+          <p class="text-xs text-slate-500">校門口導護師長及志工守護</p>
+        </div>
+
+        <div class="bg-white dark:bg-slate-800 rounded-3xl p-5 border border-warm-200 shadow-sm">
+          <div class="w-10 h-10 rounded-2xl bg-warm-500 text-white mx-auto flex items-center justify-center mb-2">
+            <i data-lucide="sunset" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-sm">2. 放學時間</h3>
+          <div class="text-sm font-black text-warm-700 dark:text-warm-300 font-title my-1">半日 12:40 / 全日 15:55</div>
+          <p class="text-xs text-slate-500">導師親自帶隊交接給家長</p>
+        </div>
+
+        <div class="bg-white dark:bg-slate-800 rounded-3xl p-5 border border-warm-200 shadow-sm">
+          <div class="w-10 h-10 rounded-2xl bg-rose-500 text-white mx-auto flex items-center justify-center mb-2">
+            <i data-lucide="bus" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-sm">3. 安親班接送</h3>
+          <div class="text-sm font-black text-rose-600 font-title my-1">專區專人交接</div>
+          <p class="text-xs text-slate-500">安親班老師親自負責點名</p>
+        </div>
+
+        <div class="bg-white dark:bg-slate-800 rounded-3xl p-5 border border-warm-200 shadow-sm">
+          <div class="w-10 h-10 rounded-2xl bg-orange-500 text-white mx-auto flex items-center justify-center mb-2">
+            <i data-lucide="pencil" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-sm">4. 課後照顧班</h3>
+          <div class="text-sm font-black text-orange-600 font-title my-1">16:00 (4:00) 放學</div>
+          <p class="text-xs text-slate-500">每週一二三五・作業輔導</p>
+        </div>
+
+        <div class="bg-white dark:bg-slate-800 rounded-3xl p-5 border border-warm-200 shadow-sm">
+          <div class="w-10 h-10 rounded-2xl bg-sun-500 text-white mx-auto flex items-center justify-center mb-2">
+            <i data-lucide="sparkles" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-sm">5. 多元社團</h3>
+          <div class="text-xs font-black text-sun-600 font-title my-1">一至四 16:00 / 五 / 六早</div>
+          <p class="text-xs text-slate-500">豐富藝文、體育、動手做</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: 重要行政叮嚀 (Notices) -->
+  <section id="notices" class="py-16 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl sm:text-4xl font-black font-title text-slate-900 dark:text-white mb-3">學校重要行政叮嚀</h2>
+        <p class="text-slate-600 dark:text-slate-300">掌握評量、服裝、午餐與校園活動規範，親師合作無縫接軌。</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-warm-50/70 dark:bg-slate-800 rounded-3xl p-6 shadow-sm border border-warm-200 dark:border-slate-700">
+          <div class="w-10 h-10 rounded-xl bg-warm-200 text-warm-800 flex items-center justify-center mb-3">
+            <i data-lucide="file-check" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-black mb-2">多元學習評量機制</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+            每學期實施 <strong>2 次定期評量</strong>，高度重視孩子平時課堂表現與多元成果檢視。
+          </p>
+        </div>
+
+        <div class="bg-warm-50/70 dark:bg-slate-800 rounded-3xl p-6 shadow-sm border border-warm-200 dark:border-slate-700">
+          <div class="w-10 h-10 rounded-xl bg-amber-200 text-amber-800 flex items-center justify-center mb-3">
+            <i data-lucide="globe" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-black mb-2">低年級國際教育 (免筆試)</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+            著重<strong>聽說應用與情境沉浸</strong>，<strong>不實施紙筆測驗</strong>，無壓力快樂學英語。
+          </p>
+        </div>
+
+        <div class="bg-warm-50/70 dark:bg-slate-800 rounded-3xl p-6 shadow-sm border border-warm-200 dark:border-slate-700">
+          <div class="w-10 h-10 rounded-xl bg-sun-200 text-sun-800 flex items-center justify-center mb-3">
+            <i data-lucide="shirt" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-black mb-2">校園服裝規範</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+            主要著<strong>學校運動服</strong>便於活動；<strong>每週三為「生活服日」</strong>展現自主朝氣。
+          </p>
+        </div>
+
+        <div class="bg-warm-50/70 dark:bg-slate-800 rounded-3xl p-6 shadow-sm border border-warm-200 dark:border-slate-700">
+          <div class="w-10 h-10 rounded-xl bg-rose-200 text-rose-800 flex items-center justify-center mb-3">
+            <i data-lucide="utensils-crossed" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-black mb-2">優質午餐加碼 69.1 元</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+            中央廚房補助至 62 元，雲林縣府再加碼 7.1 元，每餐達 <strong>69.1 元</strong>，兼顧美味與健康素食。
+          </p>
+        </div>
+
+        <div class="bg-warm-50/70 dark:bg-slate-800 rounded-3xl p-6 shadow-sm border border-warm-200 dark:border-slate-700">
+          <div class="w-10 h-10 rounded-xl bg-orange-200 text-orange-800 flex items-center justify-center mb-3">
+            <i data-lucide="medal" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-black mb-2">鼓勵參與多元競賽</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+            積極支持學童參與體育、藝文、語文、科技活動與競賽，累積自信高峰經驗。
+          </p>
+        </div>
+
+        <div class="bg-warm-50/70 dark:bg-slate-800 rounded-3xl p-6 shadow-sm border border-warm-200 dark:border-slate-700">
+          <div class="w-10 h-10 rounded-xl bg-amber-200 text-amber-800 flex items-center justify-center mb-3">
+            <i data-lucide="messages-square" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-black mb-2">親師三通原則</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+            秉持<strong>「時時溝通、處處溝通、有效溝通」</strong>，與家長隨時站在同一陣線！
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: 新生入學互動檢核 (Checklist) -->
+  <section id="checklist" class="py-16 sm:py-24 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-black font-title text-slate-900 dark:text-white mb-2">小一新生入學準備檢核清單</h2>
+      <p class="text-sm text-slate-500">勾選準備進度，從容迎接小學新生活！</p>
+    </div>
+
+    <div class="bg-white dark:bg-slate-800 rounded-3xl p-6 sm:p-8 shadow-warm-xl border border-warm-200 dark:border-slate-700">
+      <div class="space-y-3">
+        <label class="flex items-center gap-3 p-3 rounded-2xl bg-warm-50 dark:bg-slate-750 cursor-pointer">
+          <input type="checkbox" class="w-5 h-5 rounded text-warm-600">
+          <span class="text-sm">下載並註冊<strong>「雲林縣智慧校園親師生平台 APP」</strong></span>
+        </label>
+        <label class="flex items-center gap-3 p-3 rounded-2xl bg-warm-50 dark:bg-slate-750 cursor-pointer">
+          <input type="checkbox" class="w-5 h-5 rounded text-warm-600">
+          <span class="text-sm">輕量雙肩護脊書包（能平整放入 A4 課本與聯絡簿）</span>
+        </label>
+        <label class="flex items-center gap-3 p-3 rounded-2xl bg-warm-50 dark:bg-slate-750 cursor-pointer">
+          <input type="checkbox" class="w-5 h-5 rounded text-warm-600">
+          <span class="text-sm">鉛筆盒（削好 5~6 支 2B 鉛筆、無毒橡皮擦、15cm 直尺）</span>
+        </label>
+        <label class="flex items-center gap-3 p-3 rounded-2xl bg-warm-50 dark:bg-slate-750 cursor-pointer">
+          <input type="checkbox" class="w-5 h-5 rounded text-warm-600">
+          <span class="text-sm">個人姓名貼紙（水壺、餐盒、文具用品皆貼上）</span>
+        </label>
+        <label class="flex items-center gap-3 p-3 rounded-2xl bg-warm-50 dark:bg-slate-750 cursor-pointer">
+          <input type="checkbox" class="w-5 h-5 rounded text-warm-600">
+          <span class="text-sm">不鏽鋼雙層隔熱午餐餐盒、湯匙與餐具袋</span>
+        </label>
+        <label class="flex items-center gap-3 p-3 rounded-2xl bg-warm-50 dark:bg-slate-750 cursor-pointer">
+          <input type="checkbox" class="w-5 h-5 rounded text-warm-600">
+          <span class="text-sm">作息調整：每晚 9:00 前就寢、早晨 7:00 起床規律</span>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: 常見問答 (FAQ) -->
+  <section id="faq" class="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-black font-title text-slate-900 dark:text-white mb-2">新生家長常見問答 (FAQ)</h2>
+      <p class="text-sm text-slate-500">彙整新生家長最關心的關鍵問題與解答。</p>
+    </div>
+
+    <div class="space-y-4">
+      <div class="faq-item bg-white dark:bg-slate-800 rounded-2xl border border-warm-200 dark:border-slate-700 p-5">
+        <button class="faq-btn w-full text-left font-bold text-slate-800 dark:text-white flex justify-between items-center">
+          <span>Q1. 智慧校園親師生平台 APP 主要是做什麼用的？</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400"></i>
+        </button>
+        <div class="faq-ans hidden mt-3 pt-3 border-t border-warm-100 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          配合雲林縣數位學生證，APP 提供家長隨時掌握學生<strong>到校刷卡通知、成績查詢、圖書借閱紀錄、電子聯絡簿以及學校即時重要公告</strong>，是小學六年親師溝通的重要橋樑！
+        </div>
+      </div>
+
+      <div class="faq-item bg-white dark:bg-slate-800 rounded-2xl border border-warm-200 dark:border-slate-700 p-5">
+        <button class="faq-btn w-full text-left font-bold text-slate-800 dark:text-white flex justify-between items-center">
+          <span>Q2. 前十週注音符號教學如何進行？</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400"></i>
+        </button>
+        <div class="faq-ans hidden mt-3 pt-3 border-t border-warm-100 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          每週安排 6 節國語課進行系統化精熟教學。老師會以生活圖像與讀本引導，家長每天陪伴孩子朗讀 10~15 分鐘即可建立良好語感！
+        </div>
+      </div>
+
+      <div class="faq-item bg-white dark:bg-slate-800 rounded-2xl border border-warm-200 dark:border-slate-700 p-5">
+        <button class="faq-btn w-full text-left font-bold text-slate-800 dark:text-white flex justify-between items-center">
+          <span>Q3. 放學時如何接送？導師交接流程為何？</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400"></i>
+        </button>
+        <div class="faq-ans hidden mt-3 pt-3 border-t border-warm-100 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          放學時間半日為 12:40、全日為 15:55。導師會親自帶領至校門口確認家長身分交接；安親班學童則由安親班專責老師於專區點名引導上車。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 8: 聯絡我們 (Contact) -->
+  <section id="contact" class="py-16 bg-warm-100/60 dark:bg-slate-900 border-t border-warm-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-2xl">
+      <h2 class="text-3xl font-black font-title text-slate-900 dark:text-white mb-4">時時溝通・親師同行</h2>
+      <p class="text-slate-600 dark:text-slate-300 text-sm mb-8">
+        若您對始業式、APP 使用或校務有任何問題，歡迎隨時與學校團隊或校長聯繫！
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+        <a href="tel:0928990206" class="p-4 bg-white dark:bg-slate-800 rounded-2xl border border-warm-200 hover:border-warm-500 transition">
+          <div class="font-bold text-slate-800 dark:text-white">校長專線</div>
+          <div class="text-warm-700 font-black mt-1">0928-990-206</div>
+        </a>
+        <a href="tel:056622524" class="p-4 bg-white dark:bg-slate-800 rounded-2xl border border-warm-200 hover:border-warm-500 transition">
+          <div class="font-bold text-slate-800 dark:text-white">學校總機</div>
+          <div class="text-amber-700 font-black mt-1">05-6622524</div>
+        </a>
+        <a href="tel:0915616260" class="p-4 bg-white dark:bg-slate-800 rounded-2xl border border-warm-200 hover:border-warm-500 transition">
+          <div class="font-bold text-slate-800 dark:text-white">APP 諮詢 (資訊組)</div>
+          <div class="text-rose-700 font-black mt-1">0915-616-260</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800 text-center">
+    <p class="font-bold text-slate-300 text-sm">雲林縣土庫鎮土庫國民小學 115學年度小一新生迎新活動</p>
+    <p class="mt-1">點土成菁，樂動國際我最酷 | 校長：陳明誌 | 資訊組：謝俊慶老師</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    // Dark Mode Toggle
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+
+    // Mobile Menu Toggle
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Confetti
+    document.getElementById('celebrate-btn')?.addEventListener('click', () => {
+      confetti({ particleCount: 120, spread: 80, origin: { y: 0.6 } });
+    });
+
+    // Accordion FAQ
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const ans = btn.nextElementSibling;
+        ans.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
