@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>雲林縣土庫國小 115學年度小一新生迎新實施計畫</title>
+  
+  <!-- Google Fonts: Zen Kaku Gothic New & Noto Serif TC -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            washi: {
+              50: '#FBFBFA',
+              100: '#F7F6F3',
+              200: '#EFECE6',
+              300: '#E4DFD5',
+              800: '#3D3835',
+              900: '#23201E',
+            },
+            wood: {
+              50: '#FDFBF7',
+              100: '#F7F2E7',
+              500: '#A68A68',
+              600: '#8C704E',
+              700: '#6F563B',
+            },
+            vermilion: {
+              500: '#C84B31',
+              600: '#AD3B24',
+              700: '#8E2D1A',
+            },
+            sumi: {
+              700: '#4A4A4A',
+              800: '#2D2D2D',
+              900: '#1A1A1A',
+            }
+          },
+          fontFamily: {
+            sans: ['"Zen Kaku Gothic New"', 'sans-serif'],
+            serif: ['"Noto Serif TC"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Zen Kaku Gothic New', sans-serif;
+    }
+    .font-serif-tc {
+      font-family: 'Noto Serif TC', serif;
+    }
+    /* Custom Checkbox Style */
+    .custom-checkbox:checked {
+      background-color: #8C704E;
+      border-color: #8C704E;
+    }
+    .custom-checkbox:checked + label {
+      text-decoration: line-through;
+      color: #9CA3AF;
+    }
+  </style>
+</head>
+<body class="bg-washi-50 text-stone-800 dark:bg-stone-900 dark:text-stone-200 transition-colors duration-300 antialiased selection:bg-wood-100 selection:text-wood-700">
+
+  <!-- 頂部置頂公告列 -->
+  <div class="bg-stone-800 text-stone-200 text-xs py-2 px-4 border-b border-stone-700 dark:bg-stone-950">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2 tracking-wider">
+        <span class="inline-block w-2 h-2 rounded-full bg-vermilion-500"></span>
+        <span>【土庫小星・明智啟程】115學年度小一新生迎新專頁正式上線</span>
+      </div>
+      <div class="flex items-center gap-4 text-stone-400">
+        <a href="tel:056622037" class="hover:text-stone-200 flex items-center gap-1 transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i> (05) 662-2037
+        </a>
+        <a href="mailto:contact@tkes.ylc.edu.tw" class="hover:text-stone-200 flex items-center gap-1 transition-colors">
+          <i data-lucide="mail" class="w-3.5 h-3.5"></i> 輔導室洽詢
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 導覽列 (Sticky Navbar) -->
+  <nav class="sticky top-0 z-40 bg-washi-50/90 dark:bg-stone-900/90 backdrop-blur-md border-b border-stone-200 dark:border-stone-800 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-full bg-wood-100 dark:bg-stone-800 flex items-center justify-center border border-wood-500/30 text-wood-700 dark:text-wood-500 font-serif-tc font-bold text-base">
+          土
+        </div>
+        <div>
+          <span class="text-xs text-stone-500 dark:text-stone-400 tracking-widest block">雲林縣土庫國民小學</span>
+          <span class="font-serif-tc font-bold tracking-wider text-base text-stone-800 dark:text-stone-100">115學年度 新生迎新計畫</span>
+        </div>
+      </div>
+
+      <!-- 電腦版選單 -->
+      <div class="hidden md:flex items-center space-x-6 text-sm tracking-widest text-stone-600 dark:text-stone-300">
+        <a href="#schedule" class="hover:text-vermilion-500 transition-colors">當日流程</a>
+        <a href="#staff" class="hover:text-vermilion-500 transition-colors">工作職掌</a>
+        <a href="#timeline" class="hover:text-vermilion-500 transition-colors">籌備時程</a>
+        <a href="#checklist" class="hover:text-vermilion-500 transition-colors">行前檢核</a>
+        <a href="#faq" class="hover:text-vermilion-500 transition-colors">常見問答</a>
+      </div>
+
+      <!-- 右側按鈕區 -->
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" aria-label="切換深淺色" class="p-2 rounded-full hover:bg-stone-200 dark:hover:bg-stone-800 text-stone-600 dark:text-stone-300 transition-colors">
+          <i data-lucide="moon" class="w-4 h-4 hidden dark:block"></i>
+          <i data-lucide="sun" class="w-4 h-4 block dark:hidden"></i>
+        </button>
+        <button id="mobileMenuBtn" aria-label="開啟選單" class="md:hidden p-2 rounded-lg hover:bg-stone-200 dark:hover:bg-stone-800 text-stone-600 dark:text-stone-300">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- 手機版選單 Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-stone-200 dark:border-stone-800 bg-washi-50 dark:bg-stone-900 px-4 py-4 space-y-3 text-sm">
+      <a href="#schedule" class="block py-1.5 text-stone-700 dark:text-stone-300 hover:text-vermilion-500">當日流程表</a>
+      <a href="#staff" class="block py-1.5 text-stone-700 dark:text-stone-300 hover:text-vermilion-500">工作人員職掌</a>
+      <a href="#timeline" class="block py-1.5 text-stone-700 dark:text-stone-300 hover:text-vermilion-500">事前籌備時程</a>
+      <a href="#checklist" class="block py-1.5 text-stone-700 dark:text-stone-300 hover:text-vermilion-500">新生行前檢核</a>
+      <a href="#faq" class="block py-1.5 text-stone-700 dark:text-stone-300 hover:text-vermilion-500">家長常見問答</a>
+    </div>
+  </nav>
+
+  <!-- Hero 主視覺區 -->
+  <header class="py-16 md:py-24 border-b border-stone-200 dark:border-stone-800 relative bg-washi-100/60 dark:bg-stone-900/40">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 bg-stone-200/80 dark:bg-stone-800 text-stone-600 dark:text-stone-400 text-xs tracking-widest uppercase rounded-full mb-6">
+        <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+        <span>115 年 08 月 29 日 星期六</span>
+      </div>
+      <h1 class="font-serif-tc text-3xl sm:text-5xl font-bold tracking-tight text-stone-900 dark:text-stone-100 mb-4 leading-tight">
+        明智的選擇・璀璨的起點
+      </h1>
+      <p class="text-stone-600 dark:text-stone-400 max-w-xl mx-auto text-base sm:text-lg mb-8 font-light leading-relaxed">
+        小一新星閃亮登場，大手牽小手，走過星光大道，在土庫的溫潤沃土裡靜靜綻放。
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <button onclick="triggerConfetti()" class="px-6 py-2.5 bg-stone-800 hover:bg-stone-900 dark:bg-stone-100 dark:hover:bg-white dark:text-stone-900 text-stone-100 text-sm tracking-widest rounded transition-all shadow-sm flex items-center gap-2">
+          <i data-lucide="sparkles" class="w-4 h-4 text-vermilion-500"></i>
+          <span>送上入學祝福</span>
+        </button>
+        <a href="#schedule" class="px-6 py-2.5 bg-white dark:bg-stone-800 border border-stone-300 dark:border-stone-700 hover:border-stone-400 text-stone-700 dark:text-stone-300 text-sm tracking-widest rounded transition-all flex items-center gap-2">
+          <span>查閱流程</span>
+          <i data-lucide="arrow-down" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 數據亮點區 (Highlights) -->
+  <section class="py-12 border-b border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-4 border-r border-stone-100 dark:border-stone-800 last:border-0">
+          <p class="text-xs text-stone-500 dark:text-stone-400 tracking-wider mb-1">班級規模</p>
+          <p class="font-serif-tc text-3xl font-bold text-stone-800 dark:text-stone-100">4 <span class="text-base font-normal">班</span></p>
+          <p class="text-xs text-stone-400 mt-1">甲・乙・丙・丁班</p>
+        </div>
+        <div class="p-4 border-r border-stone-100 dark:border-stone-800 last:border-0">
+          <p class="text-xs text-stone-500 dark:text-stone-400 tracking-wider mb-1">入學專屬禮</p>
+          <p class="font-serif-tc text-3xl font-bold text-vermilion-600">5 <span class="text-base font-normal">品</span></p>
+          <p class="text-xs text-stone-400 mt-1">新書・寶典・餐具等</p>
+        </div>
+        <div class="p-4 border-r border-stone-100 dark:border-stone-800 last:border-0">
+          <p class="text-xs text-stone-500 dark:text-stone-400 tracking-wider mb-1">探索體驗關卡</p>
+          <p class="font-serif-tc text-3xl font-bold text-stone-800 dark:text-stone-100">5 <span class="text-base font-normal">關</span></p>
+          <p class="text-xs text-stone-400 mt-1">趣味定向闖關</p>
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-stone-500 dark:text-stone-400 tracking-wider mb-1">預備餐盒</p>
+          <p class="font-serif-tc text-3xl font-bold text-stone-800 dark:text-stone-100">146 <span class="text-base font-normal">盒</span></p>
+          <p class="text-xs text-stone-400 mt-1">憑闖關卡領取</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1. 當日流程表 -->
+  <section id="schedule" class="py-16 md:py-20 border-b border-stone-200 dark:border-stone-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="mb-12 text-center">
+        <span class="text-xs font-serif-tc tracking-widest text-wood-600 dark:text-wood-500 uppercase block mb-1">Agenda</span>
+        <h2 class="font-serif-tc text-2xl sm:text-3xl font-bold text-stone-900 dark:text-stone-100">迎新當日流程表</h2>
+        <div class="w-8 h-0.5 bg-stone-300 dark:bg-stone-700 mx-auto mt-3"></div>
+      </div>
+
+      <div class="space-y-6">
+        <!-- 階段 1 -->
+        <div class="border border-stone-200 dark:border-stone-800 rounded bg-white dark:bg-stone-900/60 p-6 transition-all hover:border-stone-300 dark:hover:border-stone-700">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-stone-100 dark:border-stone-800 pb-3 mb-4">
+            <div class="flex items-center gap-3">
+              <span class="px-2.5 py-0.5 text-xs font-mono bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 rounded">08:30 - 09:00</span>
+              <h3 class="font-serif-tc font-bold text-lg text-stone-800 dark:text-stone-100">明智的選擇 ➔ 明誌校長歡迎你/妳</h3>
+            </div>
+            <span class="text-xs text-stone-500 flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> 地點：中廊</span>
+          </div>
+          <ul class="space-y-2 text-sm text-stone-600 dark:text-stone-400 pl-4 list-disc marker:text-wood-500">
+            <li>先至各班教室，由導師發放「巨星入學證」配戴以供辨識。</li>
+            <li>校長於中廊配戴迎新花圈歡迎新生與家長。</li>
+            <li><strong>09:00 整隊</strong>：依座號排隊，引導至活動中心前籃球場集合，由校長帶領走星光大道。</li>
+          </ul>
+        </div>
+
+        <!-- 階段 2 -->
+        <div class="border border-stone-200 dark:border-stone-800 rounded bg-white dark:bg-stone-900/60 p-6 transition-all hover:border-stone-300 dark:hover:border-stone-700">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-stone-100 dark:border-stone-800 pb-3 mb-4">
+            <div class="flex items-center gap-3">
+              <span class="px-2.5 py-0.5 text-xs font-mono bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 rounded">09:00 - 09:10</span>
+              <h3 class="font-serif-tc font-bold text-lg text-stone-800 dark:text-stone-100">星光大道</h3>
+            </div>
+            <span class="text-xs text-stone-500 flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> 地點：活動中心前 ➔ 活動中心</span>
+          </div>
+          <p class="text-sm text-stone-600 dark:text-stone-400">
+            小一新星閃亮登場，大手牽小手，漫天泡泡氣氛營造，夢想起點 GO GO GO！
+          </p>
+        </div>
+
+        <!-- 階段 3 -->
+        <div class="border border-stone-200 dark:border-stone-800 rounded bg-white dark:bg-stone-900/60 p-6 transition-all hover:border-stone-300 dark:hover:border-stone-700">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-stone-100 dark:border-stone-800 pb-3 mb-4">
+            <div class="flex items-center gap-3">
+              <span class="px-2.5 py-0.5 text-xs font-mono bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 rounded">09:10 - 09:30</span>
+              <h3 class="font-serif-tc font-bold text-lg text-stone-800 dark:text-stone-100">迎新・迎星 典禮儀式</h3>
+            </div>
+            <span class="text-xs text-stone-500 flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> 地點：活動中心</span>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4 text-sm text-stone-600 dark:text-stone-400 mb-3">
+            <div>
+              <p class="font-medium text-stone-700 dark:text-stone-300 mb-1">典禮流程：</p>
+              <ol class="list-decimal pl-4 space-y-1">
+                <li>主席致歡迎詞</li>
+                <li>家長會長致詞</li>
+                <li>認識新生師長</li>
+                <li>校長致贈迎新五大好禮</li>
+              </ol>
+            </div>
+            <div>
+              <p class="font-medium text-stone-700 dark:text-stone-300 mb-1">校長致贈見面禮物：</p>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>小一新書、新生幸福寶典</li>
+                <li>卡通萌扇、乖乖加油棒</li>
+                <li>新生專屬環保餐具</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bg-stone-50 dark:bg-stone-800/50 p-3 rounded text-xs text-stone-500 dark:text-stone-400">
+            <strong>轉銜說明：</strong>儀式結束後，由各班導師帶領學生至班級進行「新生定向輔導」；家長留於活動中心進行「新生家長座談」。
+          </div>
+        </div>
+
+        <!-- 階段 4 -->
+        <div class="border border-stone-200 dark:border-stone-800 rounded bg-white dark:bg-stone-900/60 p-6 transition-all hover:border-stone-300 dark:hover:border-stone-700">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-stone-100 dark:border-stone-800 pb-3 mb-4">
+            <div class="flex items-center gap-3">
+              <span class="px-2.5 py-0.5 text-xs font-mono bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 rounded">09:30 - 10:20</span>
+              <h3 class="font-serif-tc font-bold text-lg text-stone-800 dark:text-stone-100">雙軌進行：家長座談 vs 新生定向輔導</h3>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="p-4 border border-stone-200 dark:border-stone-800 rounded bg-washi-50 dark:bg-stone-800/30">
+              <span class="text-xs px-2 py-0.5 bg-stone-200 dark:bg-stone-700 text-stone-700 dark:text-stone-300 rounded font-medium">家長專屬</span>
+              <h4 class="font-serif-tc font-bold text-base mt-2 mb-1">新生家長座談 ＋ 闖關說明</h4>
+              <p class="text-xs text-stone-500 mb-2"><i data-lucide="map-pin" class="w-3 h-3 inline"></i> 活動中心｜主講：校長、護理師、生教組長</p>
+              <p class="text-xs text-stone-600 dark:text-stone-400">說明校園作息、健康照護、生活常規與後續闖關引導。</p>
+            </div>
+            <div class="p-4 border border-stone-200 dark:border-stone-800 rounded bg-washi-50 dark:bg-stone-800/30">
+              <span class="text-xs px-2 py-0.5 bg-wood-100 dark:bg-stone-700 text-wood-700 dark:text-wood-400 rounded font-medium">新生專屬</span>
+              <h4 class="font-serif-tc font-bold text-base mt-2 mb-1">新生定向輔導</h4>
+              <p class="text-xs text-stone-500 mb-2"><i data-lucide="map-pin" class="w-3 h-3 inline"></i> 各班教室｜攜帶乖乖加油棒</p>
+              <p class="text-xs text-stone-600 dark:text-stone-400">座位定位、閱讀贈書、認識導師、發放闖關卡並加蓋首印。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 階段 5 -->
+        <div class="border border-stone-200 dark:border-stone-800 rounded bg-white dark:bg-stone-900/60 p-6 transition-all hover:border-stone-300 dark:hover:border-stone-700">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-stone-100 dark:border-stone-800 pb-3 mb-4">
+            <div class="flex items-center gap-3">
+              <span class="px-2.5 py-0.5 text-xs font-mono bg-vermilion-500 text-white rounded">10:30 - 11:30</span>
+              <h3 class="font-serif-tc font-bold text-lg text-stone-800 dark:text-stone-100">闖關活動 & 快樂賦歸</h3>
+            </div>
+            <span class="text-xs text-stone-500 flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> 地點：活動中心</span>
+          </div>
+          
+          <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3 text-xs mb-4">
+            <div class="p-3 border border-stone-200 dark:border-stone-800 rounded">
+              <p class="font-bold text-stone-800 dark:text-stone-200">關卡 1：密室逃脫之鑰</p>
+              <p class="text-stone-500 mt-1">過關好禮：書籤 ＋ 弟子規</p>
+            </div>
+            <div class="p-3 border border-stone-200 dark:border-stone-800 rounded">
+              <p class="font-bold text-stone-800 dark:text-stone-200">關卡 2：神之筷手</p>
+              <p class="text-stone-500 mt-1">過關好禮：新生幸福寶典</p>
+            </div>
+            <div class="p-3 border border-stone-200 dark:border-stone-800 rounded">
+              <p class="font-bold text-stone-800 dark:text-stone-200">關卡 3：神奇魔法扇</p>
+              <p class="text-stone-500 mt-1">過關好禮：卡通萌扇</p>
+            </div>
+            <div class="p-3 border border-stone-200 dark:border-stone-800 rounded">
+              <p class="font-bold text-stone-800 dark:text-stone-200">關卡 4：飲食紅綠燈</p>
+              <p class="text-stone-500 mt-1">過關好禮：餐具簽名認證</p>
+            </div>
+            <div class="p-3 border border-stone-200 dark:border-stone-800 rounded">
+              <p class="font-bold text-stone-800 dark:text-stone-200">關卡 5：訂購制服</p>
+              <p class="text-stone-500 mt-1">現場套量與訂購服務</p>
+            </div>
+            <div class="p-3 bg-stone-100 dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded flex flex-col justify-center">
+              <p class="font-bold text-vermilion-600">11:30 快樂賦歸</p>
+              <p class="text-stone-500 mt-0.5">憑完整闖關卡至中廊領取餐盒</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. 工作人員職掌表 -->
+  <section id="staff" class="py-16 md:py-20 border-b border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="mb-12 text-center">
+        <span class="text-xs font-serif-tc tracking-widest text-wood-600 dark:text-wood-500 uppercase block mb-1">Staff & Assignments</span>
+        <h2 class="font-serif-tc text-2xl sm:text-3xl font-bold text-stone-900 dark:text-stone-100">當日工作人員執掌與分工</h2>
+        <div class="w-8 h-0.5 bg-stone-300 dark:bg-stone-700 mx-auto mt-3"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+        
+        <!-- 報到與招呼組 -->
+        <div class="border border-stone-200 dark:border-stone-800 p-5 rounded bg-washi-50 dark:bg-stone-900">
+          <div class="flex items-center justify-between mb-3 border-b border-stone-200 dark:border-stone-800 pb-2">
+            <h3 class="font-serif-tc font-bold text-stone-800 dark:text-stone-200 flex items-center gap-1.5">
+              <i data-lucide="user-check" class="w-4 h-4 text-wood-600"></i> 迎新報到與招呼組
+            </h3>
+            <span class="text-xs font-mono text-stone-400">08:30-09:00</span>
+          </div>
+          <p class="text-xs mb-1 text-stone-500"><strong class="text-stone-700 dark:text-stone-300">人員：</strong>琪玫、虹伶、Lucky、Justine</p>
+          <p class="text-xs mb-2 text-stone-500"><strong class="text-stone-700 dark:text-stone-300">地點：</strong>中廊（備長桌*2、桌巾、礦泉水）</p>
+          <p class="text-xs text-stone-600 dark:text-stone-400">校長配戴迎新花圈、引導新生至各班領取「巨星證」、回收花圈。</p>
+        </div>
+
+        <!-- 星光大道與典禮組 -->
+        <div class="border border-stone-200 dark:border-stone-800 p-5 rounded bg-washi-50 dark:bg-stone-900">
+          <div class="flex items-center justify-between mb-3 border-b border-stone-200 dark:border-stone-800 pb-2">
+            <h3 class="font-serif-tc font-bold text-stone-800 dark:text-stone-200 flex items-center gap-1.5">
+              <i data-lucide="award" class="w-4 h-4 text-wood-600"></i> 星光大道與典禮組
+            </h3>
+            <span class="text-xs font-mono text-stone-400">09:00-09:35</span>
+          </div>
+          <ul class="text-xs space-y-1 text-stone-600 dark:text-stone-400">
+            <li><strong>泡泡營造：</strong>曉瑜、麗娜、湘芸、律恆</li>
+            <li><strong>遞獎人員：</strong>文玲、淑平</li>
+            <li><strong>音控投影：</strong>俊慶</li>
+            <li><strong>禮物整理：</strong>湘芸、玉琇（新書➔美淑 / 加油棒➔輔導室 / 萌扇➔于倫 / 寶典➔秀宜 / 餐具➔美英）</li>
+          </ul>
+        </div>
+
+        <!-- 班級導師組 -->
+        <div class="border border-stone-200 dark:border-stone-800 p-5 rounded bg-washi-50 dark:bg-stone-900">
+          <div class="flex items-center justify-between mb-3 border-b border-stone-200 dark:border-stone-800 pb-2">
+            <h3 class="font-serif-tc font-bold text-stone-800 dark:text-stone-200 flex items-center gap-1.5">
+              <i data-lucide="users" class="w-4 h-4 text-wood-600"></i> 新生定向班級導師組
+            </h3>
+            <span class="text-xs font-mono text-stone-400">09:35-10:30</span>
+          </div>
+          <div class="grid grid-cols-2 gap-2 text-xs text-stone-600 dark:text-stone-400">
+            <p><strong>甲班：</strong>丁香尤、洪淑靜、張依儒</p>
+            <p><strong>乙班：</strong>張淑華、鄭佳欣、張凱瑜</p>
+            <p><strong>丙班：</strong>王菁苑、蔡宗憲、林佩儀</p>
+            <p><strong>丁班：</strong>李淑華、莊鎮華、陳綉姍</p>
+          </div>
+          <p class="text-[11px] text-stone-400 mt-2">任務：姓名三角立牌、置放閱讀贈書、認念導師、發放闖關卡與加油棒。</p>
+        </div>
+
+        <!-- 闖關負責組 -->
+        <div class="border border-stone-200 dark:border-stone-800 p-5 rounded bg-washi-50 dark:bg-stone-900 lg:col-span-2">
+          <div class="flex items-center justify-between mb-3 border-b border-stone-200 dark:border-stone-800 pb-2">
+            <h3 class="font-serif-tc font-bold text-stone-800 dark:text-stone-200 flex items-center gap-1.5">
+              <i data-lucide="check-circle" class="w-4 h-4 text-wood-600"></i> 闖關活動各關負責人員
+            </h3>
+            <span class="text-xs font-mono text-stone-400">10:30-11:30</span>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-xs text-stone-600 dark:text-stone-400">
+            <p><strong>第 1 關 密室逃脫：</strong>淑平、文玲、Justine、玉琇、淑靜 (章 6-12號/桌*3)</p>
+            <p><strong>第 2 關 神之筷手：</strong>創文、秀宜、律恆、琪玫、依儒、虹伶 (章 13-19號/舞台)</p>
+            <p><strong>第 3 關 魔法扇：</strong>于倫、煒翔、湘芸、佩玲、Lucky、佳欣</p>
+            <p><strong>第 4 關 飲食紅綠燈：</strong>秋雪、美英、綉姍、素靜、美淑、凱瑜 (章 27-33號/側門)</p>
+            <p class="sm:col-span-2"><strong>第 5 關 訂購制服：</strong>雅華、國賢、曉瑜、佩儀</p>
+          </div>
+        </div>
+
+        <!-- 賦歸與攝影組 -->
+        <div class="border border-stone-200 dark:border-stone-800 p-5 rounded bg-washi-50 dark:bg-stone-900">
+          <div class="flex items-center justify-between mb-3 border-b border-stone-200 dark:border-stone-800 pb-2">
+            <h3 class="font-serif-tc font-bold text-stone-800 dark:text-stone-200 flex items-center gap-1.5">
+              <i data-lucide="camera" class="w-4 h-4 text-wood-600"></i> 支援與賦歸組
+            </h3>
+            <span class="text-xs font-mono text-stone-400">全程/11:30</span>
+          </div>
+          <div class="space-y-2 text-xs text-stone-600 dark:text-stone-400">
+            <p><strong>賦歸餐盒發放：</strong>校長、秋雪主任、勝雄主任、念蓓（中廊）</p>
+            <p><strong>全程拍照攝影：</strong>友山、苑伊、麗娜</p>
+            <p><strong>家長座談主持：</strong>校長、護理師、生教組長</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. 事前準備時程 -->
+  <section id="timeline" class="py-16 md:py-20 border-b border-stone-200 dark:border-stone-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="mb-12 text-center">
+        <span class="text-xs font-serif-tc tracking-widest text-wood-600 dark:text-wood-500 uppercase block mb-1">Timeline</span>
+        <h2 class="font-serif-tc text-2xl sm:text-3xl font-bold text-stone-900 dark:text-stone-100">事前籌備工作時程</h2>
+        <div class="w-8 h-0.5 bg-stone-300 dark:bg-stone-700 mx-auto mt-3"></div>
+      </div>
+
+      <div class="border-l border-stone-200 dark:border-stone-800 ml-4 md:ml-8 space-y-8">
+        
+        <!-- Item 1 -->
+        <div class="relative pl-6">
+          <span class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-stone-400 dark:bg-stone-600 ring-4 ring-washi-50 dark:ring-stone-900"></span>
+          <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+            <span class="text-xs font-mono font-bold text-wood-600 dark:text-wood-400">08月02日</span>
+            <h4 class="font-medium text-stone-800 dark:text-stone-200 text-sm">事前規劃與架構研擬</h4>
+          </div>
+          <p class="text-xs text-stone-500 mt-1">負責人：勝雄主任、嘉慧</p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="relative pl-6">
+          <span class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-stone-400 dark:bg-stone-600 ring-4 ring-washi-50 dark:ring-stone-900"></span>
+          <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+            <span class="text-xs font-mono font-bold text-wood-600 dark:text-wood-400">08月06日 - 08月10日</span>
+            <h4 class="font-medium text-stone-800 dark:text-stone-200 text-sm">入學通知印製、聯繫家長與海報文宣設計</h4>
+          </div>
+          <p class="text-xs text-stone-500 mt-1">負責人：素靜、嘉慧、俊慶</p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="relative pl-6">
+          <span class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-stone-400 dark:bg-stone-600 ring-4 ring-washi-50 dark:ring-stone-900"></span>
+          <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+            <span class="text-xs font-mono font-bold text-wood-600 dark:text-wood-400">08月19日</span>
+            <h4 class="font-medium text-stone-800 dark:text-stone-200 text-sm">物資整備（新書、幸福寶典、餐具、名牌套、闖關卡分發各班）</h4>
+          </div>
+          <p class="text-xs text-stone-500 mt-1">負責人：美淑、嘉慧、新生導師</p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="relative pl-6">
+          <span class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-stone-400 dark:bg-stone-600 ring-4 ring-washi-50 dark:ring-stone-900"></span>
+          <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+            <span class="text-xs font-mono font-bold text-wood-600 dark:text-wood-400">08月24日 - 08月27日</span>
+            <h4 class="font-medium text-stone-800 dark:text-stone-200 text-sm">行政採購聯繫（會長聯繫、訂餐盒 146 盒、飲料 45 杯、名單確認）</h4>
+          </div>
+          <p class="text-xs text-stone-500 mt-1">負責人：秋雪主任、嘉慧、新生導師</p>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="relative pl-6">
+          <span class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-vermilion-500 ring-4 ring-washi-50 dark:ring-stone-900"></span>
+          <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+            <span class="text-xs font-mono font-bold text-vermilion-600">08月28日 (前一日)</span>
+            <h4 class="font-medium text-stone-800 dark:text-stone-200 text-sm">行前總預演與場地佈置</h4>
+          </div>
+          <div class="mt-2 grid sm:grid-cols-3 gap-2 text-xs text-stone-500">
+            <div class="p-2 border border-stone-200 dark:border-stone-800 rounded bg-white dark:bg-stone-900">
+              <strong>09:00</strong> 一年級老師關卡說明
+            </div>
+            <div class="p-2 border border-stone-200 dark:border-stone-800 rounded bg-white dark:bg-stone-900">
+              <strong>11:10</strong> 活動行前說明會
+            </div>
+            <div class="p-2 border border-stone-200 dark:border-stone-800 rounded bg-white dark:bg-stone-900">
+              <strong>14:30</strong> 場地佈置(氣球/座位200張/音響)
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="relative pl-6">
+          <span class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-wood-600 ring-4 ring-washi-50 dark:ring-stone-900"></span>
+          <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+            <span class="text-xs font-mono font-bold text-wood-600">08月29日 (迎新當天)</span>
+            <h4 class="font-medium text-stone-800 dark:text-stone-200 text-sm">迎新活動正式開跑 ＆ 場地還原</h4>
+          </div>
+          <p class="text-xs text-stone-500 mt-1">流程掌控：勝雄主任｜拍照：友山、苑伊、麗娜｜場地還原：全體同仁</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 行前檢核表 (Interactive Checklist) -->
+  <section id="checklist" class="py-16 md:py-20 border-b border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900/40">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="mb-10 text-center">
+        <span class="text-xs font-serif-tc tracking-widest text-wood-600 dark:text-wood-500 uppercase block mb-1">Checklist</span>
+        <h2 class="font-serif-tc text-2xl sm:text-3xl font-bold text-stone-900 dark:text-stone-100">小一新生入學行前檢核</h2>
+        <p class="text-xs text-stone-500 mt-2">請家長出門前逐項確認，帶著愉悅心情迎接新旅程</p>
+      </div>
+
+      <div class="border border-stone-200 dark:border-stone-800 rounded bg-washi-50 dark:bg-stone-900 p-6 space-y-4">
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input type="checkbox" class="custom-checkbox w-4 h-4 mt-0.5 rounded text-wood-600 focus:ring-wood-500 border-stone-300">
+          <span class="text-sm text-stone-700 dark:text-stone-300">已確認新生所屬班級（甲、乙、丙、丁班）與座號</span>
+        </label>
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input type="checkbox" class="custom-checkbox w-4 h-4 mt-0.5 rounded text-wood-600 focus:ring-wood-500 border-stone-300">
+          <span class="text-sm text-stone-700 dark:text-stone-300">準時於 08:30 前抵達土庫國小中廊進行報到</span>
+        </label>
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input type="checkbox" class="custom-checkbox w-4 h-4 mt-0.5 rounded text-wood-600 focus:ring-wood-500 border-stone-300">
+          <span class="text-sm text-stone-700 dark:text-stone-300">攜帶個人環保水壺與輕便文具用品</span>
+        </label>
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input type="checkbox" class="custom-checkbox w-4 h-4 mt-0.5 rounded text-wood-600 focus:ring-wood-500 border-stone-300">
+          <span class="text-sm text-stone-700 dark:text-stone-300">準備訂購制服所需之相關尺寸或現場套量規劃</span>
+        </label>
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input type="checkbox" class="custom-checkbox w-4 h-4 mt-0.5 rounded text-wood-600 focus:ring-wood-500 border-stone-300">
+          <span class="text-sm text-stone-700 dark:text-stone-300">帶著滿滿的笑容與期待，與導師及新同學相見歡</span>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常見問答 (FAQ Accordion) -->
+  <section id="faq" class="py-16 md:py-20 border-b border-stone-200 dark:border-stone-800">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="mb-10 text-center">
+        <span class="text-xs font-serif-tc tracking-widest text-wood-600 dark:text-wood-500 uppercase block mb-1">Q&A</span>
+        <h2 class="font-serif-tc text-2xl sm:text-3xl font-bold text-stone-900 dark:text-stone-100">家長常見問答</h2>
+        <div class="w-8 h-0.5 bg-stone-300 dark:bg-stone-700 mx-auto mt-3"></div>
+      </div>
+
+      <div class="space-y-3" id="faq-container">
+        <!-- FAQ 1 -->
+        <div class="border border-stone-200 dark:border-stone-800 rounded bg-white dark:bg-stone-900 overflow-hidden">
+          <button class="faq-btn w-full px-5 py-4 text-left flex justify-between items-center text-sm font-medium text-stone-800 dark:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800/50">
+            <span>當天家長需要全程陪同孩子嗎？</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-stone-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-4 text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed border-t border-stone-100 dark:border-stone-800 pt-3">
+            典禮結束後採雙軌進行：孩子由導師引導至班級進行定向輔導，家長則留於活動中心參與新生家長座談。10:30 闖關時家長可陪同孩子一起在活動中心闖關體驗。
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="border border-stone-200 dark:border-stone-800 rounded bg-white dark:bg-stone-900 overflow-hidden">
+          <button class="faq-btn w-full px-5 py-4 text-left flex justify-between items-center text-sm font-medium text-stone-800 dark:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800/50">
+            <span>如何領取迎新餐盒？</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-stone-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-4 text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed border-t border-stone-100 dark:border-stone-800 pt-3">
+            完成闖關活動並蓋齊所有印章後，於 11:30 憑闖關卡至學校中廊即可兌換精美餐盒一份。
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="border border-stone-200 dark:border-stone-800 rounded bg-white dark:bg-stone-900 overflow-hidden">
+          <button class="faq-btn w-full px-5 py-4 text-left flex justify-between items-center text-sm font-medium text-stone-800 dark:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800/50">
+            <span>制服可以在迎新當天購買嗎？</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-stone-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-4 text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed border-t border-stone-100 dark:border-stone-800 pt-3">
+            可以的！活動中心第 5 關設有制服訂購攤位，由雅華、國賢、曉瑜、佩儀等同仁提供現場套量與訂購諮詢服務。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾 (Footer) -->
+  <footer class="bg-stone-900 text-stone-400 text-xs py-12 border-t border-stone-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid sm:grid-cols-3 gap-8">
+      <div>
+        <h4 class="font-serif-tc text-white font-bold text-sm mb-3">雲林縣土庫國民小學</h4>
+        <p class="leading-relaxed text-stone-400">
+          地址：633 雲林縣土庫鎮中正路 69 號<br>
+          電話：(05) 662-2037<br>
+          傳真：(05) 662-4752
+        </p>
+      </div>
+      <div>
+        <h4 class="font-serif-tc text-white font-bold text-sm mb-3">重要期程提醒</h4>
+        <p class="leading-relaxed text-stone-400">
+          迎新日期：115 年 8 月 29 日 (六)<br>
+          活動時間：08:30 - 11:30<br>
+          活動地點：中廊、活動中心、各班教室
+        </p>
+      </div>
+      <div>
+        <h4 class="font-serif-tc text-white font-bold text-sm mb-3">用心守護・啟迪新星</h4>
+        <p class="leading-relaxed text-stone-400">
+          感謝全體師長與同仁共同籌劃，陪伴孩子走過初入學堂的溫暖第一步。
+        </p>
+        <p class="text-stone-600 mt-4">© 115 學年度 土庫國小 輔導室 編製</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 原生 JavaScript 互動程式碼 -->
+  <script>
+    // 1. 初始化 Lucide 圖示
+    lucide.createIcons();
+
+    // 2. 深色/淺色模式切換
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const htmlEl = document.documentElement;
+
+    // 檢查系統或儲存喜好
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      htmlEl.classList.add('dark');
+    } else {
+      htmlEl.classList.remove('dark');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      if (htmlEl.classList.contains('dark')) {
+        htmlEl.classList.remove('dark');
+        localStorage.theme = 'light';
+      } else {
+        htmlEl.classList.add('dark');
+        localStorage.theme = 'dark';
+      }
+      lucide.createIcons();
+    });
+
+    // 3. 手機版選單切換
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // 點擊選單內部連結後自動收合
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // 4. FAQ 手風琴 (Accordion)
+    const faqButtons = document.querySelectorAll('.faq-btn');
+    faqButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('i');
+        const isOpen = !content.classList.contains('hidden');
+
+        // 關閉其他
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-btn i').forEach(i => i.style.transform = 'rotate(0deg)');
+
+        if (!isOpen) {
+          content.classList.remove('hidden');
+          if (icon) icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+
+    // 5. 祝福灑花按鈕 (Canvas Confetti)
+    function triggerConfetti() {
+      // 採用和紙/日系優雅低飽和配色彩屑
+      confetti({
+        particleCount: 80,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: ['#8C704E', '#C84B31', '#E4DFD5', '#3D3835', '#F7F2E7']
+      });
+    }
+  </script>
+</body>
+</html>
